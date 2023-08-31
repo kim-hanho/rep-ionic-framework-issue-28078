@@ -12,6 +12,7 @@ export class TabsPage {
 
   constructor() {}
 
+  // Workaround by liamdebeasi: https://github.com/ionic-team/ionic-framework/issues/16834#issuecomment-631676434
   tabChange(tabsRef: IonTabs) {
     this.activeTab = tabsRef.outlet.activatedView?.element;
   }
